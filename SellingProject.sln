@@ -3,9 +3,43 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{6353B814-07F6-4E80-9AFF-4C29D830EA7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7EBABDE7-9B66-43F6-A92D-00BE39FDFD1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{243EDE39-D991-405C-9491-34B4D574EAA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{3A4DE3CB-EA4E-4AFC-9EAA-5E36FA894058}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{50092468-4F08-4636-815A-3984B0F87429}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{60B0813E-7BAC-408B-998A-86E8CE3F020D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApiGateway", "WebApiGateway", "{BA5648FE-9F0F-4B96-A0DE-542065FAE6BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.ApiGateway", "src\ApiGateways\WebApiGateway\Web.ApiGateway\Web.ApiGateway.csproj", "{9E03A8D5-E683-426F-A15F-FC131E3F05CA}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E03A8D5-E683-426F-A15F-FC131E3F05CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E03A8D5-E683-426F-A15F-FC131E3F05CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E03A8D5-E683-426F-A15F-FC131E3F05CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E03A8D5-E683-426F-A15F-FC131E3F05CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{243EDE39-D991-405C-9491-34B4D574EAA0} = {7EBABDE7-9B66-43F6-A92D-00BE39FDFD1F}
+		{3A4DE3CB-EA4E-4AFC-9EAA-5E36FA894058} = {7EBABDE7-9B66-43F6-A92D-00BE39FDFD1F}
+		{50092468-4F08-4636-815A-3984B0F87429} = {7EBABDE7-9B66-43F6-A92D-00BE39FDFD1F}
+		{60B0813E-7BAC-408B-998A-86E8CE3F020D} = {7EBABDE7-9B66-43F6-A92D-00BE39FDFD1F}
+		{BA5648FE-9F0F-4B96-A0DE-542065FAE6BC} = {243EDE39-D991-405C-9491-34B4D574EAA0}
+		{9E03A8D5-E683-426F-A15F-FC131E3F05CA} = {BA5648FE-9F0F-4B96-A0DE-542065FAE6BC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E8721BBC-B084-4EEA-B65F-68C11371B030}
