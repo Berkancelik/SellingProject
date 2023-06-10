@@ -15,6 +15,6 @@ namespace EventBus.Base.Abstraction
 
         void Subscribe<T, TH>() where T:IntegrationEvent where TH:IIntegrationEventHandler<T>;
 
-        void Unsubscribe<T, TH>() where T : IntegrationEvent where TH:IIntegrationEventHandler<T>;
+        void UnSubscribe<T, TH>() where T : IntegrationEvent where TH:IIntegrationEventHandler<T>;
     }
 }

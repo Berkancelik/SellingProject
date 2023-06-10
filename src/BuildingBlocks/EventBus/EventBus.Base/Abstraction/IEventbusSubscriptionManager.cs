@@ -17,7 +17,7 @@ namespace EventBus.Base.Abstraction
         /// <summary>
         /// When the event is removed, this event is triggered when the inside event is created and the unscribe method that comes to us from outside works.
         /// </summary>
-        event EventHandler<string> OnEventRecoved;
+        event EventHandler<string> OnEventRemoved;
 
         void AddSubscription<T, TH>() where TH: IIntegrationEventHandler<T> where T : IntegrationEvent;
 
@@ -27,8 +27,8 @@ namespace EventBus.Base.Abstraction
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
         /// 
-        bool HasSubscriptionsForEvent<T>() where T : IntegrationEvent;  
-        bool HasSubscriptionsForEvent<T>(string eventName);
+        bool HasSubscriptionForEvent<T>() where T : IntegrationEvent;
+        bool HasSubscriptionForEvent(string eventName);
 
         /// <summary>
         /// When the event arrives, it sends its type.
