@@ -13,8 +13,8 @@ namespace EventBus.Base.SubManagers
 
         private readonly Dictionary<string, List<SubscriptionInfo>> _handlers;
         private readonly List<Type> _eventTypes;
-         public event EventHandler<string> OnEventRecoved;
-
+        public event EventHandler<string> OnEventRemoved;
+ 
         public Func<string, string> eventNameGetter;
 
         public InMemoryEventBusSubscriptionManager(Func<string, string> eventNameGetter)
@@ -24,10 +24,13 @@ namespace EventBus.Base.SubManagers
             this.eventNameGetter = eventNameGetter;
         }
 
+         
         public bool IsEmpty => !_handlers.Keys.Any();
 
+       
         public void Clear() => _handlers.Clear();
 
+     
         public void AddSubscription<T, TH>() where T : IntegrationEvent where TH : IIntegrationEventHandler<T>
         {
             var eventName = GetEventKey<T>();

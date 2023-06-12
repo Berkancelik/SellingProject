@@ -27,6 +27,8 @@ namespace EventBus.Base.Abstraction
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
         /// 
+        void RemoveSubscription<T, TH>() where T : IntegrationEvent where TH : IIntegrationEventHandler<T>;
+
         bool HasSubscriptionForEvent<T>() where T : IntegrationEvent;
         bool HasSubscriptionForEvent(string eventName);
 
