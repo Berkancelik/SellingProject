@@ -3,12 +3,12 @@ using EventBus.Base.Events;
 using Microsoft.Azure.ServiceBus;
 using Microsoft.Azure.ServiceBus.Management;
 using Newtonsoft.Json;
-using Serilog;
-using System;
+ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 
 namespace EventBus.AzureServiceBus
 {
